@@ -3,10 +3,10 @@ from datetime import datetime, timedelta
 from airflow.decorators import dag
 from airflow.operators.dummy_operator import DummyOperator
 
-from final_project_operators.stage_redshift import StageToRedshiftOperator
-from final_project_operators.load_fact import LoadFactOperator
-from final_project_operators.load_dimension import LoadDimensionOperator
-from final_project_operators.data_quality import DataQualityOperator
+from Operators.stage_redshift import StageToRedshiftOperator
+from Operators.load_fact import LoadFactOperator
+from Operators.load_dimension import LoadDimensionOperator
+from Operators.data_quality import DataQualityOperator
 
 from udacity.common.final_project_sql_statements import SqlQueries
 
